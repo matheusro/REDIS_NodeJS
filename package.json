@@ -1,0 +1,24 @@
+{
+  "name": "redis_nodejs",
+  "version": "1.0.0",
+  "description": "REDIS and NodeJS app for Uniritter classes for NoSQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusro/REDIS_NodeJS.git"
+  },
+  "keywords": [
+    "redis",
+    "node",
+    "nodejs"
+  ],
+  "author": "Matheus Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusro/REDIS_NodeJS/issues"
+  },
+  "homepage": "https://github.com/matheusro/REDIS_NodeJS#readme"
+}
