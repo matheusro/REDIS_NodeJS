@@ -9,14 +9,6 @@ var redisClient = redis.createClient();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-redisClient.on('connect', function() {
-    console.log('Redis client connected');
-});
-
-redisClient.on('error', function (err) {
-    console.log('Something went wrong ' + err);
-});
-
 app.post('/cart/:user_id', function(req, res){
     var user_id = req.params.user_id
     var cart_name = "cart_"+user_id
@@ -75,4 +67,12 @@ app.get('/cart/:user_id', function(req, res){
 
 app.listen(3000, function () {
     console.log('Listening on port 3000');
+});
+
+redisClient.on('connect', function() {
+    console.log('Redis client connected');
+});
+
+redisClient.on('error', function (err) {
+    console.log('Something went wrong ' + err);
 });
